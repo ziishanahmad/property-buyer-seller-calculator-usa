@@ -52,7 +52,7 @@ The plugin will calculate various costs for buyers and sellers in the USA based 
    - **Tabs:** Two tabs for switching between buyer and seller calculators.
 
 3. **Technologies:**
-   - **JavaScript:** For dropdown functionality and API integration.
+   - **JavaScript and jQuery:** For dropdown functionality, form validation, and API integration.
    - **HTML:** For structuring the form and tabs.
    - **CSS:** For styling the form and tabs.
 
@@ -71,7 +71,7 @@ The plugin will calculate various costs for buyers and sellers in the USA based 
 #### Next Steps:
 1. **Research and Identify an API** that provides tax rates for all locations in the USA.
 2. **Design the User Interface** with the necessary fields and dropdowns.
-3. **Implement the Dropdown Functionality** using JavaScript to ensure cities are dynamically populated based on the selected state.
+3. **Implement the Dropdown Functionality** using jQuery to ensure cities are dynamically populated based on the selected state.
 4. **Create the Tab Structure** for switching between buyer and seller calculators.
 5. **Integrate the API** for fetching and applying tax rates based on user-selected locations.
 
