@@ -1,78 +1,65 @@
-### Buyer and Seller Calculator WordPress Plugin Requirements
+### Requirements for the Buyer and Seller Calculator Plugin
 
-#### Overview:
-The plugin will calculate various costs for buyers and sellers in the USA based on taxes and other costs specific to each location. Users will only need to input prices, and the tax information will be applied automatically using an API. The calculator will be presented in two tabs: one for the Buyer Calculator and one for the Seller Calculator.
+
 
 #### Features:
 
 1. **Tabs for Buyer and Seller Calculators:**
-   - The page will have two tabs: one for the Buyer Calculator and one for the Seller Calculator.
+   - Two tabs on the page: one for the Buyer Calculator and one for the Seller Calculator.
 
 2. **Location-Based Tax Calculation:**
-   - The plugin will use an API to fetch tax rates for each state and city in the USA.
+   - Integrate an API to fetch real estate tax rates for each state and city in the USA.
 
 3. **Dropdown Selection:**
-   - Two dropdown menus: one for selecting a state and another for selecting a city within the chosen state.
-   - The dropdowns will be searchable.
+   - Two searchable dropdown menus: one for selecting a state and another for selecting a city within the chosen state.
 
-#### Seller Calculator Fields:
-- **Purchase Price:** Input field for the purchase price of the property.
-- **Total Commission %:** Input field for the total commission percentage.
-- **Survey Cost:** Input field for the survey cost.
-- **State/County Transfer Tax:** Input field for the state or county transfer tax.
-- **City Transfer Tax:** Input field for the city transfer tax.
-- **Prior Year Full Tax Bill:** Input field for the prior year's full tax bill.
-- **Attorney Fee:** Input field for the attorney fee.
-- **Property Taxes %:** Input field for the property tax percentage.
-- **Mortgage Payoff Amount:** Input field for the mortgage payoff amount.
-- **Miscellaneous Costs:** Input field for any miscellaneous costs.
-- **Closing Cost Credits:** Input field for closing cost credits.
-- **Compute Button:** Button to compute the total costs.
+4. **Buyer and Seller Calculator Fields:**
+   - **Seller Calculator:**
+     - Purchase Price
+     - Total Commission %
+     - Survey Cost
+     - State/County Transfer Tax
+     - City Transfer Tax
+     - Prior Year Full Tax Bill
+     - Attorney Fee
+     - Property Taxes %
+     - Mortgage Payoff Amount
+     - Miscellaneous Costs
+     - Closing Cost Credits
+     - Compute Button
+   - **Buyer Calculator:**
+     - Home Price
+     - Down Payment %
+     - Interest Rate %
+     - Loan Term (years)
+     - Hazard Insurance
+     - Property Taxes %
+     - City Transfer Tax
+     - Closing Date
+     - Compute Button
 
-#### Buyer Calculator Fields:
-- **Home Price:** Input field for the home price.
-- **Down Payment %:** Input field for the down payment percentage.
-- **Interest Rate %:** Input field for the interest rate percentage.
-- **Loan Term (years):** Input field for the loan term in years.
-- **Hazard Insurance:** Input field for the hazard insurance cost.
-- **Property Taxes %:** Input field for the property tax percentage.
-- **City Transfer Tax:** Input field for the city transfer tax.
-- **Closing Date:** Input field for the closing date.
-- **Compute Button:** Button to compute the total costs.
+5. **Proration Calculations:**
+   - Calculate proration based on the time the seller lived in the property before the sale.
+   - Use a standard proration rate (e.g., 105% or 110%) depending on the location to account for tax increases.
 
-#### Requirements:
-
-1. **API Integration:**
-   - Identify and integrate an API that provides tax rates for every location in the USA.
-
-2. **User Interface:**
-   - **State Dropdown:** Searchable dropdown to select a state.
-   - **City Dropdown:** Searchable dropdown to select a city, populated based on the selected state.
-   - **Form Fields:** Various input fields for user data entry.
-   - **Tabs:** Two tabs for switching between buyer and seller calculators.
-
-3. **Technologies:**
-   - **JavaScript and jQuery:** For dropdown functionality, form validation, and API integration.
-   - **HTML:** For structuring the form and tabs.
-   - **CSS:** For styling the form and tabs.
-
-4. **Validation:**
+6. **Validation:**
    - Ensure all input fields are validated to prevent incorrect data entry.
    - Provide error messages for invalid inputs.
 
-5. **Result Display:**
+7. **Result Display:**
    - Display the calculated results in a user-friendly manner.
    - Include options to view detailed breakdowns of the calculations.
 
-#### Reference Files:
-- **styles.css:** Contains styles for form layout, button styling, and overall design consistency.
-- **scripts.js:** Contains functions for input validation, currency formatting, and calculation logic for both seller and buyer calculators.
+#### API Integration:
 
-#### Next Steps:
-1. **Research and Identify an API** that provides tax rates for all locations in the USA.
-2. **Design the User Interface** with the necessary fields and dropdowns.
-3. **Implement the Dropdown Functionality** using jQuery to ensure cities are dynamically populated based on the selected state.
-4. **Create the Tab Structure** for switching between buyer and seller calculators.
-5. **Integrate the API** for fetching and applying tax rates based on user-selected locations.
+Given the need for comprehensive real estate tax data, **Avalara API** is recommended due to its robust support for various types of tax calculations, including real estate transaction taxes.
 
-Please review these requirements and let me know if there are any changes or additions needed. Once you confirm, I'll proceed with the next steps.
+### Next Steps:
+
+1. **Sign Up for Avalara**: Create an account on Avalara's website and obtain your API key.
+2. **Review Documentation**: Familiarize yourself with Avalara’s API documentation to understand how to make requests and handle responses for property-related taxes.
+3. **Develop API Integration**: Write the necessary code to integrate the Avalara API into your WordPress plugin.
+4. **Implement Proration Calculations**: Incorporate proration logic based on the example provided.
+5. **Test the Integration**: Thoroughly test the integration to ensure accuracy and reliability in tax calculations.
+
+Please confirm if these requirements are accurate and if you'd like to proceed with integrating the Avalara API.
